@@ -64,4 +64,6 @@ int main()
 	mergeSort(arr, 0, arr.size() - 1);
 	for (int num : arr)
 		cout << num << ",";
+	
+	return 0;
 }
