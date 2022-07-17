@@ -37,7 +37,7 @@ a
 r
 */
 
-//TC: 
+//TC: O(cq)
 void solve()
 {
     int n, c, q;
