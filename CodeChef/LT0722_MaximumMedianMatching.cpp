@@ -8,6 +8,25 @@ using namespace std;
 
 //Codechef July 2022 LuncTime: https://www.codechef.com/submit/MEDMAXMATCH?tab=statement
 
+/*
+Input:
+3
+1
+10
+25
+3
+1 6 6
+2 2 7
+5
+10 4 93 5 16
+4 34 62 6 26
+
+Output:
+35
+8
+50
+*/
+
 void solve()
 {
     int n;
