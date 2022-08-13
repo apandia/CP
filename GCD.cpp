@@ -6,12 +6,12 @@ using namespace std;
 
 /*
 Input:
-5		//t
-5 20	//a,b of t1
-6 6		//a,b of t2
-12 2	//a,b of t3
-50 20	//a,b of t4
-1 1		//a,b of t5
+5       //t
+5 20    //a,b of t1
+6 6	//a,b of t2
+12 2    //a,b of t3
+50 20   //a,b of t4
+1 1	//a,b of t5
 
 Output:
 GCD of 5 and 20 = 5
@@ -24,13 +24,14 @@ int gcd(int a, int b)
 {
     if (a == 0)
         return b;
-	  if (b == 0)
-		    return a;
-  
-	  if (a > b)
-		    return gcd(a - b, b);
-	  else
-		    return gcd(a, b - a);
+
+    if (b == 0)
+        return a;
+
+    if (a > b)
+        return gcd(a - b, b);
+    else
+        return gcd(a, b - a);
 }
 
 void solve()
@@ -38,7 +39,7 @@ void solve()
     int a, b;
     cin >> a >>b;
 
-	  cout << "GCD of " << a << " and " << b << " = " << gcd(a, b) << "\n";
+    cout << "GCD of " << a << " and " << b << " = " << gcd(a, b) << "\n";
 }
 
 int main()
