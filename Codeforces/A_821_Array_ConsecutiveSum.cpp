@@ -22,16 +22,29 @@ void solve()
     for (int i = 0; i < n; i++)
         cin >> arr[i];
 
-    vector<set<int>> res(k, set<int>());
+    lli ans = 0;
+
+    /*vector<set<int>> res(k, set<int>());
     for (int i = 0; i < n; i++)
     {
         res[i%k].insert(arr[i]);
     }
-
-    lli ans = 0;
+   
     for (auto it : res)
     {
         ans += (lli)*it.rbegin();
+    }*/
+
+    //Below code without set is faster (by 15 ms) and uses less memory (100 kb less)
+    vector<int> res(k);
+    for (int i = 0; i < n; i++)
+    {
+        res[i%k] = max(res[i%k], arr[i]);
+    }
+
+    for (auto val : res)
+    {
+        ans += val;
     }
 
     cout << ans << nw;
